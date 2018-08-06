@@ -9,6 +9,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
+
 public class UnitOfMeasure {
 
     private String id;

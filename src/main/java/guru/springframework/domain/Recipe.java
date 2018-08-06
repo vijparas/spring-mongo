@@ -11,6 +11,7 @@ import java.util.Set;
  */
 @Getter
 @Setter
+
 public class Recipe {
 
     private String id;

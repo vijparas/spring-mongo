@@ -14,6 +14,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 /**
  * Created by jt on 6/13/17.
@@ -45,51 +46,63 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
     private void loadCategories(){
         Category cat1 = new Category();
         cat1.setDescription("American");
+        cat1.setId(UUID.randomUUID().toString());
         categoryRepository.save(cat1);
 
         Category cat2 = new Category();
         cat2.setDescription("Italian");
+        cat2.setId(UUID.randomUUID().toString());
         categoryRepository.save(cat2);
 
         Category cat3 = new Category();
         cat3.setDescription("Mexican");
+        cat3.setId(UUID.randomUUID().toString());
         categoryRepository.save(cat3);
 
         Category cat4 = new Category();
         cat4.setDescription("Fast Food");
+        cat4.setId(UUID.randomUUID().toString());
         categoryRepository.save(cat4);
     }
 
     private void loadUom(){
         UnitOfMeasure uom1 = new UnitOfMeasure();
+        uom1.setId(UUID.randomUUID().toString());
         uom1.setDescription("Teaspoon");
         unitOfMeasureRepository.save(uom1);
 
         UnitOfMeasure uom2 = new UnitOfMeasure();
+        uom2.setId(UUID.randomUUID().toString());
         uom2.setDescription("Tablespoon");
         unitOfMeasureRepository.save(uom2);
 
         UnitOfMeasure uom3 = new UnitOfMeasure();
+        uom3.setId(UUID.randomUUID().toString());
         uom3.setDescription("Cup");
         unitOfMeasureRepository.save(uom3);
 
         UnitOfMeasure uom4 = new UnitOfMeasure();
+        uom4.setId(UUID.randomUUID().toString());
         uom4.setDescription("Pinch");
         unitOfMeasureRepository.save(uom4);
 
         UnitOfMeasure uom5 = new UnitOfMeasure();
+        uom5.setId(UUID.randomUUID().toString());
         uom5.setDescription("Ounce");
         unitOfMeasureRepository.save(uom5);
 
         UnitOfMeasure uom6 = new UnitOfMeasure();
+        uom6.setId(UUID.randomUUID().toString());
         uom6.setDescription("Each");
         unitOfMeasureRepository.save(uom6);
 
         UnitOfMeasure uom7 = new UnitOfMeasure();
+        uom7.setId(UUID.randomUUID().toString());
         uom7.setDescription("Pint");
         unitOfMeasureRepository.save(uom7);
 
         UnitOfMeasure uom8 = new UnitOfMeasure();
+        uom8.setId(UUID.randomUUID().toString());
         uom8.setDescription("Dash");
         unitOfMeasureRepository.save(uom8);
     }

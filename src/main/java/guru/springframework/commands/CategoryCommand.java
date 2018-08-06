@@ -7,8 +7,8 @@ import lombok.Setter;
 /**
  * Created by jt on 6/21/17.
  */
-@Setter
 @Getter
+@Setter
 @NoArgsConstructor
 public class CategoryCommand {
     private String id;
